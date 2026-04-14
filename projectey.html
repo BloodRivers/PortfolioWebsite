@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Projectey</title>
+  <meta name="description" content="Multiplayer FPS project actively developed in Godot Engine.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="projectey">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>Fawnyac</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="bio.html" data-nav="bio">Bio</a>
+        <a href="projects.html" data-nav="projects">Projects</a>
+        <a href="contacts.html" data-nav="contacts">Contacts</a>
+      </nav>
+    </header>
+
+    <main class="content-page">
+      <section class="steam-list">
+        <article class="steam-project" data-tilt>
+          <div class="video-container">
+            <iframe width="1133" height="637" src="https://www.youtube.com/embed/-dt_Y5bVamw" title="Godot FPS Attempt | Tech Demo #1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="steam-sidebar">
+            <div class="steam-sidebar-head">
+              <span>First Person Shooter</span>
+            </div>
+            <div class="steam-thumbs">
+              <span class="thumb" data-img="assets/images/projectey/ProjecteyPreview.png"></span>
+              <span class="thumb" data-img="assets/images/projectey/ProjecteyPreview.png"></span>
+              <span class="thumb" data-img="assets/images/projectey/ProjecteyPreview.png"></span>
+              <span class="thumb" data-img="assets/images/projectey/ProjecteyPreview.png"></span>
+            </div>
+            <p class="steam-reason">Took a lot of inspiration from games like Call of Duty, New Warfare and Valorant.</p>
+            <div class="tag-row">
+              <span class="steam-tag">Shooter</span>
+              <span class="steam-tag">Multiplayer</span>
+              <span class="steam-tag">Action</span>
+              <span class="steam-tag">Godot</span>
+              <span class="steam-tag">AI-Assisted Development</span>
+            </div>
+            <div class="steam-footer">
+              <span class="steam-status">In Progress</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="grid-section">
+        <article class="card" data-tilt>
+          <p class="card-label">Story</p>
+          <h2>The Beginning</h2>
+          <p>
+            Started as a learning project to understand multiplayer networking in Godot Engine.
+            The goal was to create a simple FPS that could be played with friends, but it quickly
+            evolved into something more ambitious.
+          </p>
+        </article>
+
+        <article class="card" data-tilt>
+          <p class="card-label">Current State</p>
+          <h2>What's Working</h2>
+          <p>
+            Core player movement, weapon systems, and networking are implemented.
+            The game is playable in its current state, with room for many more features and polish.
+          </p>
+        </article>
+      </section>
+
+      <section class="grid-section">
+        <article class="card" data-tilt>
+          <p class="card-label">Key Features</p>
+          <h2>What's Planned</h2>
+          <p>
+            Advanced weapon system, featuring knives and throwables. Multiple game modes,
+            and a progression system are all on the roadmap.
+          </p>
+        </article>
+
+        <article class="card" data-tilt>
+          <p class="card-label">Technical Stack</p>
+          <h2>Under the Hood</h2>
+          <p>
+            Built entirely in Godot Engine 4.6.2 with GDScript. Uses Steam for networking
+            and basic server-authoritative architecture.
+          </p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <div class="image-modal" id="imageModal">
+    <span class="modal-close">&times;</span>
+    <button class="modal-prev" id="modalPrev">&#10094;</button>
+    <img class="modal-content" id="modalImage">
+    <button class="modal-next" id="modalNext">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
